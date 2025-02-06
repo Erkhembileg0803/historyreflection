@@ -1,0 +1,23 @@
+
+.article{
+     grid-area: main;
+     height: 200vh;
+     display: grid;
+     grid-template-columns: 15% 1fr 15%;
+}
+.article .info{
+     grid-column: 2;
+}
+.info .heading{
+     text-align: center;
+     height: 150px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "DM Sans", serif;
+     flex-direction: column;
+     gap: 20px;
+}
+.info .heading hr{
+     width: 100%;
+}
