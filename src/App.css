@@ -155,12 +155,14 @@ main .banners .banner:nth-of-type(6){
   background-image: url(./assets/test3.jpg);
   background-size: cover;
 }
-main .banners .banner a{
+main .banners .banner{
+  text-decoration: none;
+}
+main .banners .banner p{
   transform: rotate(-90deg);
   text-align: center;
   min-width: 400px;
   font-size: 3rem;
-  text-decoration: none;
   color: white;
   font-family: sans-serif;
 }
@@ -182,6 +184,7 @@ main .historybackground article{
   overflow: hidden;
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   justify-content: space-evenly;
 }
 main .historybackground article img{
@@ -219,6 +222,18 @@ main .historybackground article p{
   main .articlebackground article .circle{
     display: none;
   }
+  main .banners .banner{
+    height: 80%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease;
+    cursor: pointer;
+  }
+  main .banners .banner p{
+    font-size: 2.2rem;
+  }
 }
 @media only screen and (max-width: 950px){
   main .introbackground .intro .container h1{
@@ -248,6 +263,18 @@ main .historybackground article p{
   main .historybackground article p{
     width: 70%;
     font-size: 1.4rem;
+  }
+  main .banners .banner{
+    height: 80%;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease;
+    cursor: pointer;
+  }
+  main .banners .banner p{
+    font-size: 1.5rem;
   }
   
 }

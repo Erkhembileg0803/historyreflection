@@ -32,26 +32,7 @@ function ResponsiveMenu(){
      </div>
 }
 function Links(){
-     const information = [
-          {
-               title: "Намтар",
-          },
-          {
-               title: "Баримтууд",
-          },
-          {
-               title: "Ургийн мод",
-          },
-          {
-               title: "Монголчуудад",
-          },
-          {
-               title: "Билэг тэмдэг",
-          },
-          {
-               title: "Бидний талаар",
-          },
-     ]
+     
      const links = information.map((item,index) => (
      <li key={index}><Link to='Article' state={{role: item.title, }}>{item.title}</Link></li>
      ))
@@ -59,3 +40,24 @@ function Links(){
                {links}
                </>
 }
+const information = [
+     {
+          title: "Намтар",
+          
+     },
+     {
+          title: "Баримтууд",
+     },
+     {
+          title: "Ургийн мод",
+     },
+     {
+          title: "Монголчуудад",
+     },
+     {
+          title: "Билэг тэмдэг",
+     },
+     {
+          title: "Бидний талаар",
+     },
+]

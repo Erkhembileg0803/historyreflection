@@ -3,7 +3,7 @@ import '../styles/article.css'
 export default function Article(props){
      const location = useLocation()
      const role = location.state?.role;
-     const description = location.state?.para1;
+     const description = location.state?.description;
 
     return <main className="article">
           <div className="info">
