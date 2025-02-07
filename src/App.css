@@ -6,6 +6,7 @@
                        "main";
   background-color: var(--theme-green);
 }
+
 main{
   grid-area: main;
   height: 240vh;

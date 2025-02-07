@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import test from '../assets/tent.jpg'
 import '../styles/article.css'
+import { useState } from "react";
 export default function Article(props){
      const location = useLocation()
      const title = location.state?.role;
@@ -16,21 +17,30 @@ export default function Article(props){
     </main>
 }
 function Blog(){
+     const [modal, setModal] = useState(false);
+     function toggleModal(){
+          setModal(!modal)
+     }
+     document.body.style.overflow = modal ? "hidden" : "auto";
      const location = useLocation()
      const articleOneImage = location.state?.articleOneImage;
      const articleOneTitle = location.state?.articleOneTitle;
      const articleOneDate = location.state?.articleOneDate;
      const articleOneSubtitle = location.state?.articleOneSubtitle;
+     const articleOneParagraph = location.state?.articleOneParagraph;
+     const articleOneParagraphTwo = location.state?.articleOneParagraphTwo
+     console.log(articleOneParagraph)
      const data = [
           {
                articleImage: articleOneImage,
                articleTitle: articleOneTitle,
                articleDate: articleOneDate,
-               articleSubtitle: articleOneSubtitle
+               articleSubtitle: articleOneSubtitle,
+               articleParagraphOne: articleOneParagraph,
+               articleParagraphTwo: articleOneParagraphTwo,
           },
 
      ]
-     console.log(data)
      const generateArticles = data.map((item, index) => (
           <div className="text" key={index}>
               <span className="image"><img src={item.articleImage} alt="" /></span>
@@ -45,11 +55,25 @@ function Blog(){
                       {item.articleSubtitle}
                   </p>
                   <hr />
-                  <p className="more">
+                  <p className="more" onClick={toggleModal}>
                       Show More 
                       <i className="fa fa-angle-right"></i>
                   </p>
               </div>
+              {modal && <div className="modal">
+               <i className="fa fa-close"onClick={toggleModal}></i>
+               <div className="container">
+               <img className="image" src={item.articleImage}>
+               </img>
+               <div className="paragraphs">
+                    <h1>{item.articleTitle}</h1>
+                    <hr />
+                    <p>{item.articleParagraphOne}</p>
+                    <hr />
+                    <p>{item.articleParagraphTwo}</p>
+               </div>
+            </div>
+          </div>}
           </div>
       ));
      return generateArticles

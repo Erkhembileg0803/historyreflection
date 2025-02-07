@@ -49,28 +49,65 @@ function Homepage(){
 function CreateBanners(){
 
 const banners = information.map((banner,index) => (
-  <Link to='Article' state={{role: banner.title, }} className='banner'key={index}><p>{banner.title}</p></Link>
+  <Link to='Article' state={{role: banner.title, articleOneTitle: banner.articleOneTitle, articleOneImage: banner.articleOneImage, articleOneDate: banner.articleOneDate, articleOneSubtitle: banner.articleOneSubtitle}} className='banner'key={index}><p>{banner.title}</p></Link>
 ))
   return <div className="banners">{banners}</div>
 }
 const information = [
   {
        title: "Намтар",
+       articleOneImage: "",
+       articleOneTitle: "",
+       articleOneDate: "",
+       articleOneSubtitle: "",
+       articleOneParagraph: "",
+       articleOneParagraphTwo: "",
   },
   {
        title: "Баримтууд",
+       articleOneImage: "",
+       articleOneTitle: "",
+       articleOneDate: "",
+       articleOneSubtitle: "",
+       articleOneParagraph: "",
+       articleOneParagraphTwo: "",
   },
   {
        title: "Ургийн мод",
+       articleOneImage: "",
+       articleOneTitle: "",
+       articleOneDate: "",
+       articleOneSubtitle: "",
+       articleOneParagraph: "",
+       articleOneParagraphTwo: "",
   },
   {
        title: "Монголчуудад",
+       articleOneImage: "",
+       articleOneTitle: "",
+       articleOneDate: "",
+       articleOneSubtitle: "",
+       articleOneParagraph: "",
+       articleOneParagraphTwo: "",
+       
   },
   {
        title: "Билэг тэмдэг",
+       articleOneImage: "",
+       articleOneTitle: "",
+       articleOneDate: "",
+       articleOneSubtitle: "",
+       articleOneParagraph: "",
+       articleOneParagraphTwo: "",
   },
   {
        title: "Бидний талаар",
+       articleOneImage: "",
+       articleOneTitle: "",
+       articleOneDate: "",
+       articleOneSubtitle: "",
+       articleOneParagraph: "",
+       articleOneParagraphTwo: "",
   },
 ]
 
