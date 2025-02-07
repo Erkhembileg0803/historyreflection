@@ -26,9 +26,9 @@
      grid-template-columns: 1fr 1fr;
      height: 50vh;
      align-items: center;
-     border: 1px solid gray;
-     border-left: transparent;
-     border-right: transparent;
+     border-top: 1px solid gray;
+     margin-top: 20px;
+     
 }
 .info .text .image{
      display: flex;
@@ -37,7 +37,7 @@
      height: 100%;
 }
 .info .text .image img{
-     width: 80%;
+     width: 90%;
      height: 80%;
 }
 .info .text .summary{

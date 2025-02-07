@@ -21,7 +21,7 @@ function ResponsiveMenu(){
      function toggleDropdown(){
           setDropDown(!dropdown)
      }
-     return <div className='responsivemenu'>
+     return <><div className='responsivemenu'>
           <li>Гэр</li>
           <li>Бидний талаар</li>
           <li className='dropdownbtn' onClick={toggleDropdown}>Түүхийн талаар
@@ -29,7 +29,8 @@ function ResponsiveMenu(){
           </i>
           <div style={{height: dropdown ? "300px" : "0", opacity: dropdown ? '100' : "0"}}><Links/></div>
           </li>
-     </div>
+       </div>
+       </>
 }
 function Links(){
      
