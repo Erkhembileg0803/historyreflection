@@ -34,7 +34,7 @@ function ResponsiveMenu(){
 function Links(){
      
      const links = information.map((item,index) => (
-     <li key={index}><Link to='Article' state={{role: item.title, }}>{item.title}</Link></li>
+     <li key={index}><Link to='Article' state={{role: item.title, articleOneTitle: item.articleOneTitle, articleOneImage: item.articleOneImage, articleOneDate: item.articleOneDate, articleOneSubtitle: item.articleOneSubtitle}}>{item.title}</Link></li>
      ))
      return     <>
                {links}
@@ -43,7 +43,10 @@ function Links(){
 const information = [
      {
           title: "Намтар",
-          
+          articleOneImage: "src",
+          articleOneTitle: "Namtar",
+          articleOneDate: "21st September",
+          articleOneSubtitle: "HELLOOOO",
      },
      {
           title: "Баримтууд",

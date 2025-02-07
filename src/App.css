@@ -169,7 +169,7 @@ main .banners .banner p{
 
 
 main .historybackground{
-  height: 80vh;
+  height: 40vh;
   background-color: var(--light-green);
   display: flex;
   align-items: center;
@@ -188,12 +188,12 @@ main .historybackground article{
   justify-content: space-evenly;
 }
 main .historybackground article img{
-  width: 25%;
-  height: 80%;
+  width: 10%;
+  height: 60%;
 }
 main .historybackground article p{
   width: 60%;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -232,7 +232,7 @@ main .historybackground article p{
     cursor: pointer;
   }
   main .banners .banner p{
-    font-size: 2.2rem;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 950px){
@@ -262,7 +262,7 @@ main .historybackground article p{
   }
   main .historybackground article p{
     width: 70%;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   main .banners .banner{
     height: 80%;

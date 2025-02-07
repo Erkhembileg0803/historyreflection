@@ -21,3 +21,55 @@
 .info .heading hr{
      width: 100%;
 }
+.info .text{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     height: 50vh;
+     align-items: center;
+     border: 1px solid gray;
+     border-left: transparent;
+     border-right: transparent;
+}
+.info .text .image{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+}
+.info .text .image img{
+     width: 80%;
+     height: 80%;
+}
+.info .text .summary{
+     display: grid;
+     grid-template-rows: 35% 45% 10% 10%;
+     height: 80%;
+     width: 85%;
+}
+.info .text .summary .title{
+     font-family: sans-serif;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.info .text .summary .date{
+     font-weight: 100;
+     font-size: 1.2rem;
+     font-family: serif;
+     color: gray;
+}
+.info .text .summary .subtitle{
+     color: gray;
+}
+.info .text .summary hr{
+     width: 100%;
+     height: 1px;
+}
+.info .text .summary .more{
+     height: 100%;
+     display: flex;
+     align-items: center;
+     font-size: 1.4rem;
+     gap: 20px;
+     cursor: pointer;
+}
