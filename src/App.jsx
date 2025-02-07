@@ -49,7 +49,13 @@ function Homepage(){
 function CreateBanners(){
 
 const banners = information.map((banner,index) => (
-  <Link to='Article' state={{role: banner.title, articleOneTitle: banner.articleOneTitle, articleOneImage: banner.articleOneImage, articleOneDate: banner.articleOneDate, articleOneSubtitle: banner.articleOneSubtitle}} className='banner'key={index}><p>{banner.title}</p></Link>
+  <Link to='Article' state={{role: banner.title, 
+    articleOneTitle: banner.articleOneTitle, 
+    articleOneImage: banner.articleOneImage, 
+    articleOneDate: banner.articleOneDate, 
+    articleOneSubtitle: banner.articleOneSubtitle, 
+    articleOneParagraph: banner.articleOneParagraph,
+    articleOneParagraphTwo: banner.articleOneParagraphTwo}} className='banner'key={index}><p>{banner.title}</p></Link>
 ))
   return <div className="banners">{banners}</div>
 }
