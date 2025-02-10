@@ -103,8 +103,8 @@
   
 }
 .info .text .modal i{
-     position: absolute;
-     right: 0;
+     position: fixed;
+     right: 50px;
      font-size: 5rem;
      color: red;
      cursor: pointer;

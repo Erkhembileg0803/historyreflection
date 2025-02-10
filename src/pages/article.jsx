@@ -1,20 +1,24 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import test from '../assets/tent.jpg'
 import '../styles/article.css'
-import { useState } from "react";
-export default function Article(props){
+import { useState, useEffect} from "react";
+import NoPageFound from "../components/nopagefound";
+export default function Article(){
      const location = useLocation()
      const title = location.state?.role;
      const description = location.state?.description;
-    return <main className="article">
-    <div className="info">
+     const {name} = useParams()
+     const main = title === name ?
+     (<main className="article">
+            <div className="info">
          <div className="heading">
          <h1>{title}</h1>
          <p>{description}</p>
          </div>
           <Blog/>
-    </div>
-    </main>
+        </div>
+        </main>) : (<NoPageFound/>)
+    return main;
 }
 function Blog(){
      const [modal, setModal] = useState(false);

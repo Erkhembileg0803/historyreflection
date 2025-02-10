@@ -22,9 +22,9 @@ function ResponsiveMenu(){
           setDropDown(!dropdown)
      }
      return <><div className='responsivemenu'>
-          <li>Гэр</li>
-          <li>Бидний талаар</li>
-          <li className='dropdownbtn' onClick={toggleDropdown}>Түүхийн талаар
+          <li><Link to='/'>Гэр</Link></li>
+          <li><Link>Бидний талаар</Link></li>
+          <li className='dropdownbtn' onClick={toggleDropdown}><Link>Түүхийн талаар</Link>
           <i class={`fa fa-angle-${!dropdown ? "down" : "up"}`}>
           </i>
           <div style={{height: dropdown ? "300px" : "0", opacity: dropdown ? '100' : "0"}}><Links/></div>
@@ -35,7 +35,7 @@ function ResponsiveMenu(){
 function Links(){
      
      const links = information.map((item,index) => (
-     <li key={index}><Link to='Article' state={{
+     <li key={index}><Link to={`/Article/${item.title}`} state={{
           role: item.title, 
           articleOneTitle: item.articleOneTitle, 
           articleOneImage: item.articleOneImage, 

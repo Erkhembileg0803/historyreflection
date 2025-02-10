@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './components/header'
 import Article from './pages/article'
+import NoPageFound from './components/nopagefound';
 function App() {
   return (
     <BrowserRouter>
@@ -12,7 +13,8 @@ function App() {
         <Route path='/' element={
           <Homepage/>
         }></Route>
-        <Route path='article' element={<Article/>}></Route>
+        <Route path='article/:name' element={<Article/>}></Route>
+        <Route path='article'element={<NoPageFound/>}></Route>
       </Routes>
     </div>
     </BrowserRouter>
@@ -26,7 +28,7 @@ function Homepage(){
         <div className="container">
           <h1>Монголын домог.</h1>
           <p>Эзэнт гүрнийг байгуулсан аугаа баатруудын мөнх домогуудыг эндээс унш.</p>
-          <Link to="Article"state={{role: information[0].title }}>Эхлэх</Link>
+          <Link to={`article/${information[0].title}`}state={{role: information[0].title }}>Эхлэх</Link>
         </div>
       </div>
     </div>
@@ -49,7 +51,7 @@ function Homepage(){
 function CreateBanners(){
 
 const banners = information.map((banner,index) => (
-  <Link to='Article' state={{role: banner.title, 
+  <Link to={`/Article/${banner.title}`} state={{role: banner.title, 
     articleOneTitle: banner.articleOneTitle, 
     articleOneImage: banner.articleOneImage, 
     articleOneDate: banner.articleOneDate, 
