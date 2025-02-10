@@ -1,0 +1,139 @@
+header{
+     grid-area: header;
+     height: 210px;
+     display: grid;
+     grid-template-rows: 80% 20%;
+     border-bottom: 3px solid var(--dark-green);
+     z-index: 999;
+}
+header .logo{
+     grid-row: 1;
+     width: 80%;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+}   
+header .logo a{
+     display: flex;
+     width: 20%;
+     align-items: center;
+     text-decoration: none;
+     color: black;
+}
+header .logo h1{   
+     font-family: "DM Sans", serif;
+     font-weight: 300;
+     font-size: 2.3rem;
+}
+header .logo img{
+     width: 120px;
+     height: 120px;
+}
+header .links{
+     background-color: var(--light-green);
+     list-style: none;
+     display: flex;
+}
+header .links span{
+     width: 100%;
+     height: 100%;
+     justify-content: space-evenly;
+     display: flex;
+     align-items: center;
+     border-top: 3px solid var(--dark-green);
+}
+header .links  span li:nth-of-type(1){
+     border-left: transparent;
+}
+header .links span li{
+     cursor: pointer;
+     font-size: 1.1rem;
+     border-left: 1px solid var(--dark-green);
+     height: 100%;
+     width: 100%;
+}
+header .links span li a{
+     color: black;
+     text-decoration: none;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+header .links span li:hover{
+     background-color: var(--theme-green);
+}
+header .links .responsivemenu{
+     display: none;
+}
+@media only screen and (max-width: 950px){
+     header .links span{ 
+          display: none;
+     }
+     header .logo{
+          width: 100%;
+     }
+     header .links .responsivemenu{
+          display: flex;
+          height: 100%;
+          align-items: center;
+          width: 100%;
+          margin: 0 auto;
+          justify-content: flex-end;
+          gap: 30px;
+          font-size: 1.1rem;
+          z-index: 999;
+          border-top: 3px solid var(--dark-green);
+     }
+     header .links .responsivemenu li{
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     header .links .responsivemenu li a{
+          color: black;
+          text-decoration: none;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+     }
+     header .links .responsivemenu .dropdownbtn{
+          display: flex;
+          align-items: center;
+          height: 100%;
+          gap: 5px;
+          position: relative;
+     }
+     header .links .responsivemenu .dropdownbtn div{
+          top: 100%;
+          position: absolute;
+          background-color: var(--light-green);
+          width: 100%;
+          height: 200px;
+          border: 3px solid var(--dark-green);
+          border-top: transparent;
+          transition: height 0.6s ease;
+          overflow: hidden;
+          
+     }
+     header .links .responsivemenu .dropdownbtn div li{
+          height: calc(100% / 5);
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.6s linear;
+     }
+     header .links .responsivemenu .dropdownbtn div li a{
+          color: black;
+          text-decoration: none;
+     }
+     header .links .responsivemenu .dropdownbtn div li:nth-last-child(1){
+          display: none;
+     }
+}
