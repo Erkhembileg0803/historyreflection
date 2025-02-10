@@ -10,7 +10,7 @@ function App() {
     <div className="App">
     <Header/>
       <Routes>
-        <Route path='/' element={
+        <Route path='/historyreflection' element={
           <Homepage/>
         }></Route>
         <Route path='article/:name' element={<Article/>}></Route>
