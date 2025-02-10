@@ -10,11 +10,11 @@ function App() {
     <div className="App">
     <Header/>
       <Routes>
-        <Route path='/' element={
+        <Route path='/historyreflection' element={
           <Homepage/>
         }></Route>
         <Route path='article/:name' element={<Article/>}></Route>
-        <Route path='article'element={<NoPageFound/>}></Route>
+        <Route path='/article'element={<NoPageFound/>}></Route>
       </Routes>
     </div>
     </BrowserRouter>
@@ -28,7 +28,7 @@ function Homepage(){
         <div className="container">
           <h1>Монголын домог.</h1>
           <p>Эзэнт гүрнийг байгуулсан аугаа баатруудын мөнх домогуудыг эндээс унш.</p>
-          <Link to={`article/${information[0].title}`}state={{role: information[0].title }}>Эхлэх</Link>
+          <Link to={`/article/${information[0].title}`}state={{role: information[0].title }}>Эхлэх</Link>
         </div>
       </div>
     </div>
