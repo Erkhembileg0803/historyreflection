@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/historyreflection/static/css/main.ef5c0025.css",
-    "main.js": "/historyreflection/static/js/main.f09e7ed5.js",
+    "main.css": "/historyreflection/static/css/main.c734dffc.css",
+    "main.js": "/historyreflection/static/js/main.2b3095aa.js",
     "static/js/488.df57ba8c.chunk.js": "/historyreflection/static/js/488.df57ba8c.chunk.js",
     "static/media/ocean.jpg": "/historyreflection/static/media/ocean.be255789c2e32810c52b.jpg",
     "static/media/test2.jpg": "/historyreflection/static/media/test2.b2307f6537cfe6396eea.jpg",
     "static/media/test.jpg": "/historyreflection/static/media/test.7f7250e20be21306a368.jpg",
+    "static/media/mohsmongolchuudad.jpg": "/historyreflection/static/media/mohsmongolchuudad.0ffc86eb5ae04fc8b989.jpg",
+    "static/media/mongolfilm.jpg": "/historyreflection/static/media/mongolfilm.3156eae3c9afaa5dd55d.jpg",
     "static/media/tent.jpg": "/historyreflection/static/media/tent.9d3b0a5832df96b79777.jpg",
     "static/media/waterfall.jpg": "/historyreflection/static/media/waterfall.03a1a6bb4784ab9d55c4.jpg",
     "static/media/test3.jpg": "/historyreflection/static/media/test3.6e4bf479281d1a7c258e.jpg",
     "static/media/circlejpg.jpg": "/historyreflection/static/media/circlejpg.07bcde7bd2922d808109.jpg",
+    "static/media/familytree.jpg": "/historyreflection/static/media/familytree.de827ca4461a5c91ae7b.jpg",
     "static/media/logo.png": "/historyreflection/static/media/logo.b08f4062b8c33d115061.png",
     "index.html": "/historyreflection/index.html",
-    "main.ef5c0025.css.map": "/historyreflection/static/css/main.ef5c0025.css.map",
-    "main.f09e7ed5.js.map": "/historyreflection/static/js/main.f09e7ed5.js.map",
+    "main.c734dffc.css.map": "/historyreflection/static/css/main.c734dffc.css.map",
+    "main.2b3095aa.js.map": "/historyreflection/static/js/main.2b3095aa.js.map",
     "488.df57ba8c.chunk.js.map": "/historyreflection/static/js/488.df57ba8c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef5c0025.css",
-    "static/js/main.f09e7ed5.js"
+    "static/css/main.c734dffc.css",
+    "static/js/main.2b3095aa.js"
   ]
 }
