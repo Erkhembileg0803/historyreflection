@@ -25,7 +25,7 @@ function Blog(){
      function toggleModal(){
           setModal(!modal)
      }
-     document.body.style.overflow = modal ? "hidden" : "auto";
+     modal ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto"
      const location = useLocation()
      const articleOneImage = location.state?.articleOneImage;
      const articleOneTitle = location.state?.articleOneTitle;
