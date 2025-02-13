@@ -4,7 +4,9 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './components/header'
 import Article from './pages/article'
 import NoPageFound from './components/nopagefound';
+
 function App() {
+  document.body.style.overflow = "auto";
   return (
     <BrowserRouter>
     <div className="App">
