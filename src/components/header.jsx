@@ -23,8 +23,8 @@ function ResponsiveMenu(){
      }
      return <><div className='responsivemenu'>
           <li><Link to='/'>Гэр</Link></li>
-          <li><Link>Бидний талаар</Link></li>
-          <li className='dropdownbtn' onClick={toggleDropdown}><Link>Түүхийн талаар</Link>
+          <li><Link >Бидний талаар</Link></li>
+          <li className='dropdownbtn' onClick={toggleDropdown}>Түүхийн талаар
           <i class={`fa fa-angle-${!dropdown ? "down" : "up"}`}>
           </i>
           <div style={{height: dropdown ? "300px" : "0", opacity: dropdown ? '100' : "0"}}><Links/></div>

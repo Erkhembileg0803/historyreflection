@@ -11,7 +11,30 @@ function App() {
     <Header/>
       <Routes>
         <Route path='/historyreflection' element={
-          <Homepage/>
+          <main>
+          <div className="introbackground">
+            <div className="intro">
+              <div className="container">
+                <h1>Монголын домог.</h1>
+                <p>Эзэнт гүрнийг байгуулсан аугаа баатруудын мөнх домогуудыг эндээс унш.</p>
+                <Link to={`/article/${information[0].title}`}state={{role: information[0].title }}>Эхлэх</Link>
+              </div>
+            </div>
+          </div>
+            <CreateBanners/>
+            <div className="articlebackground">
+            <article>
+              <div className="circle"></div>
+              <p>Чингис хаан (1162–1227) нь Монголын эзэнт гүрнийг үндэслэгч, аугаа байлдан дагуулагч байв. Тэрээр овог аймгуудаа нэгтгэж, Евразийг эзлэн тэлжээ. Хууль цааз, худалдааг хөгжүүлж, Их засаг хуулийг тогтоосон. Түүнийг нас барсны дараа эзэнт гүрэн улам өргөжсөн.</p>
+            </article>
+          </div>
+          <div className="historybackground">
+            <article>
+              <img src={Logo} alt="" />
+              <p>Бидний зорилго нь та Монголын түүхийн агуу хүнүүдийг мэдэхэд туслах явдал юм. Монголын түүх нь олон эртний баатар, эзэнт гүрэн, түүхэн үйл явдлаар баялаг. Та тэдний тухай мэдэж, түүхийн үнэт өвийг ойлгож, улс орныхоо түүхийг бахархан мэдэх болно.</p>
+            </article>
+          </div>
+        </main>
         }></Route>
         <Route path='article/:name' element={<Article/>}></Route>
         <Route path='/article'element={<NoPageFound/>}></Route>
@@ -21,32 +44,7 @@ function App() {
   );
 }
 
-function Homepage(){
-  return <main>
-    <div className="introbackground">
-      <div className="intro">
-        <div className="container">
-          <h1>Монголын домог.</h1>
-          <p>Эзэнт гүрнийг байгуулсан аугаа баатруудын мөнх домогуудыг эндээс унш.</p>
-          <Link to={`/article/${information[0].title}`}state={{role: information[0].title }}>Эхлэх</Link>
-        </div>
-      </div>
-    </div>
-      <CreateBanners/>
-      <div className="articlebackground">
-      <article>
-        <div className="circle"></div>
-        <p>Чингис хаан (1162–1227) нь Монголын эзэнт гүрнийг үндэслэгч, аугаа байлдан дагуулагч байв. Тэрээр овог аймгуудаа нэгтгэж, Евразийг эзлэн тэлжээ. Хууль цааз, худалдааг хөгжүүлж, Их засаг хуулийг тогтоосон. Түүнийг нас барсны дараа эзэнт гүрэн улам өргөжсөн.</p>
-      </article>
-    </div>
-    <div className="historybackground">
-      <article>
-        <img src={Logo} alt="" />
-        <p>Бидний зорилго нь та Монголын түүхийн агуу хүнүүдийг мэдэхэд туслах явдал юм. Монголын түүх нь олон эртний баатар, эзэнт гүрэн, түүхэн үйл явдлаар баялаг. Та тэдний тухай мэдэж, түүхийн үнэт өвийг ойлгож, улс орныхоо түүхийг бахархан мэдэх болно.</p>
-      </article>
-    </div>
-  </main>
-}
+
 
 function CreateBanners(){
 
