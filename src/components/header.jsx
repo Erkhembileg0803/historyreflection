@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Header(){
      return <header>
           <div className="logo">
-               <Link to='/'>
+               <Link to='/historyreflection'>
                <img src={Logo} alt="Logo" />
                <h1>History Reflection</h1>
                </Link>
@@ -22,7 +22,7 @@ function ResponsiveMenu(){
           setDropDown(!dropdown)
      }
      return <><div className='responsivemenu'>
-          <li><Link to='/'>Гэр</Link></li>
+          <li><Link to='/historyreflection'>Гэр</Link></li>
           <li><Link >Бидний талаар</Link></li>
           <li className='dropdownbtn' onClick={toggleDropdown}>Түүхийн талаар
           <i class={`fa fa-angle-${!dropdown ? "down" : "up"}`}>
