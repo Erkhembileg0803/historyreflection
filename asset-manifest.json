@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.da49b71c.css",
-    "main.js": "/static/js/main.c146c167.js",
-    "static/js/488.df57ba8c.chunk.js": "/static/js/488.df57ba8c.chunk.js",
-    "static/media/ocean.jpg": "/static/media/ocean.be255789c2e32810c52b.jpg",
-    "static/media/test2.jpg": "/static/media/test2.b2307f6537cfe6396eea.jpg",
-    "static/media/test.jpg": "/static/media/test.7f7250e20be21306a368.jpg",
-    "static/media/tent.jpg": "/static/media/tent.9d3b0a5832df96b79777.jpg",
-    "static/media/waterfall.jpg": "/static/media/waterfall.03a1a6bb4784ab9d55c4.jpg",
-    "static/media/test3.jpg": "/static/media/test3.6e4bf479281d1a7c258e.jpg",
-    "static/media/circlejpg.jpg": "/static/media/circlejpg.07bcde7bd2922d808109.jpg",
-    "static/media/logo.png": "/static/media/logo.b08f4062b8c33d115061.png",
-    "index.html": "/index.html",
-    "main.da49b71c.css.map": "/static/css/main.da49b71c.css.map",
-    "main.c146c167.js.map": "/static/js/main.c146c167.js.map",
-    "488.df57ba8c.chunk.js.map": "/static/js/488.df57ba8c.chunk.js.map"
+    "main.css": "/historyreflection/static/css/main.3b84ddff.css",
+    "main.js": "/historyreflection/static/js/main.9b45ee0c.js",
+    "static/js/488.df57ba8c.chunk.js": "/historyreflection/static/js/488.df57ba8c.chunk.js",
+    "static/media/ocean.jpg": "/historyreflection/static/media/ocean.be255789c2e32810c52b.jpg",
+    "static/media/test2.jpg": "/historyreflection/static/media/test2.b2307f6537cfe6396eea.jpg",
+    "static/media/test.jpg": "/historyreflection/static/media/test.7f7250e20be21306a368.jpg",
+    "static/media/tent.jpg": "/historyreflection/static/media/tent.9d3b0a5832df96b79777.jpg",
+    "static/media/waterfall.jpg": "/historyreflection/static/media/waterfall.03a1a6bb4784ab9d55c4.jpg",
+    "static/media/test3.jpg": "/historyreflection/static/media/test3.6e4bf479281d1a7c258e.jpg",
+    "static/media/circlejpg.jpg": "/historyreflection/static/media/circlejpg.07bcde7bd2922d808109.jpg",
+    "static/media/logo.png": "/historyreflection/static/media/logo.b08f4062b8c33d115061.png",
+    "index.html": "/historyreflection/index.html",
+    "main.3b84ddff.css.map": "/historyreflection/static/css/main.3b84ddff.css.map",
+    "main.9b45ee0c.js.map": "/historyreflection/static/js/main.9b45ee0c.js.map",
+    "488.df57ba8c.chunk.js.map": "/historyreflection/static/js/488.df57ba8c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da49b71c.css",
-    "static/js/main.c146c167.js"
+    "static/css/main.3b84ddff.css",
+    "static/js/main.9b45ee0c.js"
   ]
 }
