@@ -169,47 +169,6 @@ main .banners .banner p{
   font-family: sans-serif;
 }
 
-
-main .historybackground{
-  height: 40vh;
-  background-color: var(--light-green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .historybackground article{
-  background: var(--theme-green);
-  border-radius: 15px;
-  height: 60%;
-  width: 80%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-}
-main .historybackground article img{
-  width: 10%;
-  height: 60%;
-}
-main .historybackground article p{
-  width: 60%;
-  font-size: 1.5rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width:950px) and (max-width: 1200px){
   main .introbackground .intro .container h1{
     font-size: 4rem;

@@ -1,10 +1,10 @@
-import Logo from './assets/logo.png'
+
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './components/header'
 import Article from './pages/article'
 import NoPageFound from './components/nopagefound';
-
+import AboutUs from './pages/aboutus'
 function App() {
   document.body.style.overflow = "auto";
   return (
@@ -30,16 +30,11 @@ function App() {
               <p>Чингис хаан (1162–1227) нь Монголын эзэнт гүрнийг үндэслэгч, аугаа байлдан дагуулагч байв. Тэрээр овог аймгуудаа нэгтгэж, Евразийг эзлэн тэлжээ. Хууль цааз, худалдааг хөгжүүлж, Их засаг хуулийг тогтоосон. Түүнийг нас барсны дараа эзэнт гүрэн улам өргөжсөн.</p>
             </article>
           </div>
-          <div className="historybackground">
-            <article>
-              <img src={Logo} alt="" />
-              <p>Бидний зорилго нь та Монголын түүхийн агуу хүнүүдийг мэдэхэд туслах явдал юм. Монголын түүх нь олон эртний баатар, эзэнт гүрэн, түүхэн үйл явдлаар баялаг. Та тэдний тухай мэдэж, түүхийн үнэт өвийг ойлгож, улс орныхоо түүхийг бахархан мэдэх болно.</p>
-            </article>
-          </div>
         </main>
         }></Route>
         <Route path='article/:name' element={<Article/>}></Route>
         <Route path='/article'element={<NoPageFound/>}></Route>
+        <Route path='/AboutUs' element={<AboutUs/>}></Route>
       </Routes>
     </div>
     </BrowserRouter>
@@ -64,7 +59,7 @@ const banners = information.map((banner,index) => (
 const information = [
   {
        title: "Намтар",
-       articleOneImage: "",
+       articleOneImage: "https://montsame.mn/files/6552d88986d5d.jpeg",
        articleOneTitle: "",
        articleOneDate: "",
        articleOneSubtitle: "",
