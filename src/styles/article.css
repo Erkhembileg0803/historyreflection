@@ -47,6 +47,7 @@
      grid-template-rows: 35% 45% 10% 10%;
      height: 80%;
      width: 85%;
+
 }
 .info .text .summary .title{
      font-family: sans-serif;
@@ -62,7 +63,7 @@
 }
 .info .text .summary .subtitle{
      color: gray;
-     font-size: 1.5rem;
+     font-size: 1.3rem;
 }
 .info .text .summary hr{
      width: 100%;
@@ -105,9 +106,10 @@
 .info .text .modal i{
      position: fixed;
      right: 50px;
+     z-index: 999;
      font-size: 5rem;
      color: red;
-     cursor: pointer;
+     cursor: pointer;    
 }
 .info .text .container .image{
      width: auto;
@@ -152,4 +154,29 @@
      width: 80%;
      margin: 0 auto;
      font-size: 2rem;
+}
+
+
+
+@media only screen and (max-width: 1100px){
+     .article{
+          grid-template-columns: 1fr;
+     }
+     .article .info{
+          grid-column: 1;
+     }
+     .info .text .container{
+          width: 100%;
+     }
+     .info .text .summary .title{
+          font-size: 1.5rem;
+     }
+     .info .text .summary .date{
+          font-size: 1rem;
+     }
+     .info .text .summary{
+          display: grid;
+          grid-template-rows: 35% 65% 10% 10%;
+          
+     }
 }
