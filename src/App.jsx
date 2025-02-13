@@ -5,6 +5,9 @@ import Header from './components/header'
 import Article from './pages/article'
 import NoPageFound from './components/nopagefound';
 import AboutUs from './pages/aboutus'
+
+import Information from './components/information';
+const information = Information;
 function App() {
   document.body.style.overflow = "auto";
   return (
@@ -19,7 +22,28 @@ function App() {
               <div className="container">
                 <h1>Монголын домог.</h1>
                 <p>Эзэнт гүрнийг байгуулсан аугаа баатруудын мөнх домогуудыг эндээс унш.</p>
-                <Link to={`/article/${information[0].title}`}state={{role: information[0].title }}>Эхлэх</Link>
+                <Link to={`/article/${information[0].title}`}state={{
+                    role: information[0].title, 
+                    articleOneTitle: information[0].articleOneTitle, 
+                    articleOneImage: information[0].articleOneImage, 
+                    articleOneDate: information[0].articleOneDate, 
+                    articleOneSubtitle: information[0].articleOneSubtitle, 
+                    articleOneParagraph: information[0].articleOneParagraph,
+                    articleOneParagraphTwo: information[0].articleOneParagraphTwo,
+                    articleOneParagraphThree: information[0].articleOneParagraphThree,
+                    articleOneParagraphFour: information[0].articleOneParagraphFour,
+                    articleOneParagraphFive: information[0].articleOneParagraphFive,
+                    articleOneParagraphSix: information[0].articleOneParagraphSix,
+                    articleOneParagraphTitle: information[0].articleOneParagraphTitle,
+                    articleOneParagraphTwoTitle: information[0].articleOneParagraphTwoTitle,
+                    articleOneParagraphThreeTitle: information[0].articleOneParagraphThreeTitle,
+                    articleOneParagraphFourTitle: information[0].articleOneParagraphFourTitle,
+                    articleOneParagraphFiveTitle: information[0].articleOneParagraphFiveTitle,
+                    articleOneParagraphSixTitle: information[0].articleOneParagraphSixTitle,
+                    articleOneFacts: information[0].articleOneFacts,
+                    articleOneParagraphImage: information[0].articleOneParagraphImage
+
+                }}>Эхлэх</Link>
               </div>
             </div>
           </div>
@@ -56,62 +80,7 @@ const banners = information.map((banner,index) => (
 ))
   return <div className="banners">{banners}</div>
 }
-const information = [
-  {
-       title: "Намтар",
-       articleOneImage: "https://montsame.mn/files/6552d88986d5d.jpeg",
-       articleOneTitle: "",
-       articleOneDate: "",
-       articleOneSubtitle: "",
-       articleOneParagraph: "",
-       articleOneParagraphTwo: "",
-  },
-  {
-       title: "Баримтууд",
-       articleOneImage: "",
-       articleOneTitle: "",
-       articleOneDate: "",
-       articleOneSubtitle: "",
-       articleOneParagraph: "",
-       articleOneParagraphTwo: "",
-  },
-  {
-       title: "Ургийн мод",
-       articleOneImage: "",
-       articleOneTitle: "",
-       articleOneDate: "",
-       articleOneSubtitle: "",
-       articleOneParagraph: "",
-       articleOneParagraphTwo: "",
-  },
-  {
-       title: "Монголчуудад",
-       articleOneImage: "",
-       articleOneTitle: "",
-       articleOneDate: "",
-       articleOneSubtitle: "",
-       articleOneParagraph: "",
-       articleOneParagraphTwo: "",
-       
-  },
-  {
-       title: "Билэг тэмдэг",
-       articleOneImage: "",
-       articleOneTitle: "",
-       articleOneDate: "",
-       articleOneSubtitle: "",
-       articleOneParagraph: "",
-       articleOneParagraphTwo: "",
-  },
-  {
-       title: "Бидний талаар",
-       articleOneImage: "",
-       articleOneTitle: "",
-       articleOneDate: "",
-       articleOneSubtitle: "",
-       articleOneParagraph: "",
-       articleOneParagraphTwo: "",
-  },
-]
+
+
 
 export default App;
