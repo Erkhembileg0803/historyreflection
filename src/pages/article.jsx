@@ -121,7 +121,6 @@ function Blog() {
 
                             <h3>{item.articleParagraphSixTitle}</h3>
                             <p>{item.articleParagraphSix}</p>
-                            <h3>Баримтууд</h3>
                             <ol>
                                 {item.articleParagraphFacts}
                             </ol>

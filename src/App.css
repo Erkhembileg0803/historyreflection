@@ -52,7 +52,7 @@ main .introbackground .intro .container p{
 }
 main .introbackground .intro .container a{
   width: 60%;
-  background-color: var(--dark-green);
+  background-color: rgb(131, 224, 181);
   border: transparent;
   border-radius: 15px;
   height: 50px;
@@ -80,7 +80,7 @@ main .articlebackground {
   align-items: center;
 }
 main .articlebackground article{
-  background: var(--dark-green);
+  background: rgb(131, 224, 181);
   border-radius: 15px;
   height: 60%;
   width: 80%;
